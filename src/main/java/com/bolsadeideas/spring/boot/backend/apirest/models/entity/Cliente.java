@@ -21,8 +21,12 @@ public class Cliente implements Serializable{
 	@Id //Asignando el ID
 	@GeneratedValue(strategy=GenerationType.IDENTITY) //incremento del id
 	private Long id;
+	
+	@Column(nullable=false)
 	private String nombre;
 	private String apellido;
+	
+	@Column(nullable= false, unique=true)
 	private String email;
 	
 	//Cambiando el nombre de dato de la columna 
