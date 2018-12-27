@@ -97,7 +97,7 @@ public class ClienteRestControllers {
 		//Validando de que el id Exista
 		if( clienteActual == null) {
 			response.put("Status", "ERROR");
-			response.put("Message", "El cliente Con el ID: " .concat(id.toString().concat(" no existe!")));
+			response.put("Message", "El Cliente Con el ID: " .concat(id.toString().concat(" no existe!")));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.NOT_FOUND);
 		}
 		

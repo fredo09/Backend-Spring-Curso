@@ -22,7 +22,7 @@ public class Cliente implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY) //incremento del id
 	private Long id;
 	
-	@Column(nullable=false)
+	@Column(nullable = false)
 	private String nombre;
 	private String apellido;
 	
